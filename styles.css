@@ -1,0 +1,290 @@
+/* Reset e configurações iniciais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  padding: 1rem;
+}
+
+/* Cabeçalho com imagens */
+.topo-imagens {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #ffffff;
+  border-bottom: 3px solid #004aad;
+}
+
+.img-topo {
+  max-height: 300px;
+  height: auto;
+  width: auto;
+}
+
+/* Menu de navegação */
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  background-color: #fff;
+  padding: 1rem;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  background-color: #6699cc;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.menu a:hover {
+  background-color: #5577aa;
+}
+
+/* Container principal */
+main, nav {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Títulos */
+h1, h2 {
+  margin-bottom: 0.5rem;
+  color: #004aad;
+}
+
+/* Botões principais */
+.button, .button-whatsapp {
+  display: inline-block;
+  background-color: #28a745;
+  color: white;
+  padding: 0.75rem 1.25rem;
+  margin: 0.5rem 0;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.button:hover, .button-whatsapp:hover {
+  background-color: #218838;
+}
+
+.button-whatsapp {
+  background-color: #25D366;
+}
+
+.button-whatsapp:hover {
+  background-color: #1ebe5d;
+}
+
+/* Cards verticais */
+.card-vertical {
+  background-color: #e9f2ff;
+  border: 2px solid #004aad;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 10px;
+}
+
+.card-vertical h2 {
+  margin-bottom: 0.5rem;
+}
+
+/* Lista de itens */
+.lista-itens {
+  list-style: none;
+  padding-left: 1rem;
+}
+
+.lista-itens li {
+  margin-bottom: 0.5rem;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.lista-itens li::before {
+  content: "✔️";
+  position: absolute;
+  left: 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .topo-imagens {
+    flex-direction: column;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-vertical {
+    margin: 1rem 0;
+  }
+
+  .img-topo {
+    max-width: 90%;
+    height: auto;
+  }
+}
+
+/* FOOTER */
+.footer {
+  background-color: #F0F8FF;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 2rem;
+  font-size: 1rem;
+}
+
+.footer .col {
+  width: 100%;
+  max-width: 900px;
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+
+.footer .info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.2rem;
+  font-size: 1.2rem;
+}
+
+.footer .info-item img {
+  width: 32px;
+  height: 32px;
+  margin-right: 0.75rem;
+}
+
+.footer .info-item a {
+  color: #004aad;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer .info-item a:hover {
+  text-decoration: underline;
+}
+
+.imagens-footer {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 4rem;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1000px;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.perfil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  flex: 1 1 300px;
+  padding: 1rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.perfil img:first-child {
+  max-height: 220px;
+  width: auto;
+  border-radius: 15px;
+  margin-bottom: 0.5rem;
+  transition: transform 0.3s;
+}
+
+.perfil img:first-child:hover {
+  transform: scale(1.05);
+}
+
+.icon-insta {
+  width: 32px;
+  height: 32px;
+  margin-top: 0.4rem;
+  transition: transform 0.2s;
+}
+
+.icon-insta:hover {
+  transform: scale(1.2);
+}
+
+.perfil h3 {
+  font-size: 1.4rem;
+  color: #004aad;
+  font-weight: bold;
+  margin: 0.8rem 0 0.2rem;
+}
+
+.perfil h4 {
+  font-size: 1.1rem;
+  color: #333;
+  font-weight: 500;
+  margin: 0.2rem 0 0.6rem;
+}
+
+.link-biografia {
+  text-decoration: none;
+  color: #004aad;
+  font-weight: bold;
+}
+
+.link-biografia:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 2rem 1rem;
+  }
+
+  .footer .info-item {
+    font-size: 1rem;
+  }
+
+  .imagens-footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .perfil img:first-child {
+    max-width: 90%;
+    height: auto;
+  }
+}
+
+.botoes-centro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
