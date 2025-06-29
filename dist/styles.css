@@ -30,8 +30,7 @@ body {
   max-width: clamp(120px, 30%, 250px);
   width: 100%;
   height: auto;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 
 main,
@@ -311,8 +310,7 @@ main section {
   height: clamp(90px, 25vw, 150px);
   border-radius: 50%;
   border: 3px solid #007BFF;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   margin-bottom: 0.9375rem;
   transition: transform 0.3s ease;
 }
@@ -347,12 +345,14 @@ main section {
   html {
     font-size: 90%;
   }
+
   .menu a {
     flex: 1 1 45%;
   }
+
   .botoes-centro,
-  .menu-top-items-group,
-  .menu-bottom-items {
+.menu-top-items-group,
+.menu-bottom-items {
     gap: 0.75rem;
   }
 }
@@ -360,25 +360,31 @@ main section {
   html {
     font-size: 85%;
   }
+
   .menu a,
-  .button,
-  .button-whatsapp {
+.button,
+.button-whatsapp {
     flex: 1 1 100%;
     font-size: 0.9em;
   }
+
   .perfil {
     padding: 1rem;
   }
+
   .footer {
     padding: 2rem 1rem;
     flex-direction: column;
   }
+
   .footer .col {
     width: 100%;
   }
+
   .img-topo {
     max-width: 100%;
   }
+
   .lista-itens li {
     font-size: 0.9em;
     padding-left: 1rem;
@@ -388,20 +394,23 @@ main section {
   html {
     font-size: 80%;
   }
+
   main h1,
-  main h2,
-  .menu h1,
-  .menu h2 {
+main h2,
+.menu h1,
+.menu h2 {
     font-size: 1.4em;
   }
+
   .botoes-centro,
-  .menu-top-items-group,
-  .menu-bottom-items {
+.menu-top-items-group,
+.menu-bottom-items {
     flex-direction: column;
     gap: 0.5rem;
   }
+
   .perfil img:first-child {
     width: 100px;
     height: 100px;
   }
-}/*# sourceMappingURL=styles.css.map */
+}
