@@ -33,6 +33,29 @@ body {
   object-fit: contain;
 }
 
+.menu-links-superiores {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 2rem auto 1rem;
+}
+.menu-links-superiores a {
+  background-color: #007BFF;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+  text-align: center;
+  display: inline-block;
+}
+.menu-links-superiores a:hover {
+  background-color: #0056b3;
+}
+
 main,
 .menu-vertical,
 .menu {
@@ -140,15 +163,12 @@ main p,
 
 .menu-top-items-group {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 1rem;
   margin-bottom: 1rem;
 }
 
-.menu-top-item {
-  flex: 1 1 150px;
-}
 .menu-top-item a {
   background-color: #6699cc;
   color: #fff;
@@ -166,8 +186,8 @@ main p,
 
 .menu-bottom-items {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 1rem;
   width: 100%;
 }
@@ -346,14 +366,18 @@ main section {
     font-size: 90%;
   }
 
-  .menu a {
+  .menu a,
+.menu-links-superiores a {
     flex: 1 1 45%;
   }
 
   .botoes-centro,
 .menu-top-items-group,
-.menu-bottom-items {
+.menu-bottom-items,
+.menu-links-superiores {
     gap: 0.75rem;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 @media (max-width: 768px) {
@@ -362,6 +386,7 @@ main section {
   }
 
   .menu a,
+.menu-links-superiores a,
 .button,
 .button-whatsapp {
     flex: 1 1 100%;
@@ -404,9 +429,10 @@ main h2,
 
   .botoes-centro,
 .menu-top-items-group,
-.menu-bottom-items {
+.menu-links-superiores {
     flex-direction: column;
     gap: 0.5rem;
+    align-items: end;
   }
 
   .perfil img:first-child {
