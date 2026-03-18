@@ -1,29 +1,132 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Pastorais</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Pastorais | Paróquia Jesus Cristo Libertador</title>
+
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
- <header class="topo-imagens">
-    <img src="escudo_paroquia.jpg" alt="Escudo da Paróquia" class="img-topo" />
-    <img src="santo.png" alt="Imagem do Santo Oscar Romero" class="img-topo" />
+  <!-- Cabeçalho -->
+  <header class="topo">
+    <div class="topo-imagens">
+      <img src="imagens/escudo_paroquia.jpg" alt="Escudo da Paróquia" class="img-topo" />
+    </div>
+
+    <nav class="menu-principal" aria-label="Menu principal">
+      <a href="index.html">Início</a>
+      <a href="missa.html">Missas</a>
+      <a href="pastorais.html">Pastorais</a>
+      <a href="contato.html">Contato</a>
+    </nav>
   </header>
 
-  <h1>🙏 Pastorais</h1>
-  <p>Quer participar de alguma pastoral?</p>
-  <ul class="lista-itens">
-    <li>Liturgia</li>
-    <li>Música</li>
-    <li>Jovens</li>
-    <li>Família</li>
-    <li>Ministros da Eucaristia</li>
-    <li>Pastoral do Batismo</li>
-  </ul>
-  <p>Fale conosco e venha servir!</p>
-  <a href="index.html" class="button">Voltar ao Arraiá</a>
+  <main class="pagina-interna">
+
+    <!-- Título -->
+    <section class="hero-interno">
+      <h1>🙏 Pastorais</h1>
+      <p>
+        Nossa paróquia é feita por pessoas que servem com fé, amor e dedicação.
+        Conheça as pastorais e venha participar da vida da comunidade.
+      </p>
+    </section>
+
+    <!-- Introdução -->
+    <section class="conteudo-sacramento">
+      <h2>⛪ O que são as pastorais?</h2>
+      <p>
+        As pastorais são grupos de serviço e evangelização que ajudam a construir
+        uma comunidade viva, acolhedora e missionária. Cada uma tem sua missão,
+        mas todas caminham juntas para servir a Deus e ao próximo.
+      </p>
+    </section>
+
+    <!-- Lista de pastorais -->
+    <section class="conteudo-sacramento destaque-info">
+      <h2>🤝 Pastorais da nossa paróquia</h2>
+
+      <div class="grid-cards">
+        <div class="card-vertical">
+          <h3>📖 Liturgia</h3>
+          <p>Ajuda na organização das celebrações e no cuidado com os momentos litúrgicos.</p>
+        </div>
+
+        <div class="card-vertical">
+          <h3>🎵 Música</h3>
+          <p>Anima as Missas e celebrações, ajudando a comunidade a rezar também pelo canto.</p>
+        </div>
+
+        <div class="card-vertical">
+          <h3>🔥 Jovens</h3>
+          <p>Promove encontros, formação e convivência para fortalecer a fé da juventude.</p>
+        </div>
+
+        <div class="card-vertical">
+          <h3>👨‍👩‍👧‍👦 Família</h3>
+          <p>Oferece apoio e evangelização às famílias, fortalecendo os lares cristãos.</p>
+        </div>
+
+        <div class="card-vertical">
+          <h3>🍞 Ministros da Eucaristia</h3>
+          <p>Servem nas celebrações e levam Jesus Eucarístico aos irmãos enfermos e impossibilitados.</p>
+        </div>
+
+        <div class="card-vertical">
+          <h3>💧 Pastoral do Batismo</h3>
+          <p>Acompanha pais e padrinhos na preparação para o sacramento do Batismo.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Convite -->
+    <section class="conteudo-sacramento">
+      <h2>🌟 Por que participar?</h2>
+      <ul>
+        <li>Para servir a Deus com seus dons</li>
+        <li>Para crescer na fé e na vida comunitária</li>
+        <li>Para ajudar na missão da Igreja</li>
+        <li>Para viver uma experiência mais próxima da paróquia</li>
+      </ul>
+    </section>
+
+    <!-- Chamada -->
+    <section class="conteudo-sacramento">
+      <h2>🙌 Venha fazer parte</h2>
+      <p>
+        Sempre há espaço para quem deseja servir. Se você sente no coração o
+        desejo de participar mais ativamente da paróquia, fale conosco e descubra
+        onde você pode contribuir.
+      </p>
+    </section>
+
+    <!-- Contato -->
+    <section class="contato-sacramento">
+      <h2>📞 Informações</h2>
+      <p>
+        Entre em contato com a secretaria paroquial e saiba como participar de uma pastoral.
+      </p>
+
+      <div class="botoes-centro">
+        <a
+          href="https://wa.me/5519989822853?text=Olá,%20quero%20participar%20de%20uma%20pastoral"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="button-whatsapp"
+        >
+          Falar com a Secretaria
+        </a>
+
+        <a href="index.html" class="button">
+          Voltar
+        </a>
+      </div>
+    </section>
+
+  </main>
+
 </body>
 </html>

@@ -1,164 +1,383 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+  <!-- Configurações básicas da página -->
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <!-- Título da página -->
+  <title>Paróquia Jesus Cristo Libertador</title>
 
-<!-- HTML Meta Tags -->
-<title>Paróquia Jesus Cristo Libertador</title>
-<meta name="description" content="Bem-vindo à nossa Paróquia! Abaixo você encontra informações sobre nossos sacramentos, festas e atividades pastorais">
+  <!-- Descrição para mecanismos de busca -->
+  <meta
+    name="description"
+    content="Bem-vindo à Paróquia Jesus Cristo Libertador. Veja horários de missa, sacramentos, pastorais, festas e notícias."
+  />
 
-<!-- Facebook Meta Tags -->
-<meta property="og:url" content="https://projeto-par-quia-victor-reis-projects-51a64dfd.vercel.app/">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Paróquia Jesus Cristo Libertador">
-<meta property="og:description" content="Bem-vindo à nossa Paróquia! Abaixo você encontra informações sobre nossos sacramentos, festas e atividades pastorais">
-<meta property="og:image" content="https://opengraph.b-cdn.net/production/images/0494923f-eb65-4ac0-adc8-bc7d95af1676.jpg?token=jTrlYgqDIRcnDTjjCwrO9EslNIh9rkc2QmZmdeZOndg&height=640&width=640&expires=33286905238">
+  <!-- Favicon -->
+  <link rel="icon" href="imagens/escudo_paroquia.jpg" type="image/jpeg" />
 
-
+  <!-- Arquivos de estilo -->
   <link rel="stylesheet" href="styles.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
 </head>
 <body>
 
-  <header class="topo-imagens">
-    <img src="imagens/escudo_paroquia.jpg" alt="Escudo da Paróquia" class="img-topo" />
+  <!-- Cabeçalho -->
+  <header class="topo">
+    <div class="topo-imagens">
+      <img
+        src="imagens/escudo_paroquia.jpg"
+        alt="Escudo da Paróquia Jesus Cristo Libertador"
+        class="img-topo"
+      />
+    </div>
+
+    <nav class="menu-principal" aria-label="Menu principal">
+      <a href="index.html">Início</a>
+      <a href="missa.html">Missas</a>
+      <a href="batismo.html">Batismo</a>
+      <a href="catequese.html">Catequese</a>
+      <a href="casamentos.html">Casamento</a>
+      <a href="pastorais.html">Pastorais</a>
+      <a href="contato.html">Contato</a>
+    </nav>
   </header>
 
-  <nav class="menu-vertical">
-    <h1>🙏 Paróquia Jesus Cristo Libertador</h1>
-    <h3>Bem-vindo à nossa Paróquia! Abaixo você encontra informações sobre nossos sacramentos, festas e atividades pastorais</h3>
+  <!-- Conteúdo principal -->
+  <main>
 
-<div class="card-vertical">
-      <h2>🎉 Festa Junina</h2>
-      <p>Informações sobre nosso tradicional Arraiá:</p>
-      <a href="festa.html" class="button">Ver Página da Festa</a>
-    </div>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-texto">
+        <h1>Paróquia Jesus Cristo Libertador</h1>
+        <p>
+          Bem-vindo à nossa paróquia. Aqui você encontra horários de missa,
+          informações sobre sacramentos, pastorais, festas e atividades da comunidade.
+        </p>
 
-    <div class="card-vertical">
-      <h2>💧 Batismo</h2>
-      <p>Para agendar e saber mais sobre o Batismo, clique no botão abaixo:</p>
-      <a href="batismo.html" class="button">Ver Página do Batismo</a>
-    </div>
+        <div class="hero-botoes">
+          <a
+            href="https://wa.me/5519989822853"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="button-whatsapp"
+          >
+            Fale conosco no WhatsApp
+          </a>
 
-    <div class="card-vertical">
-      <h2>📚 Catequese</h2>
-      <p>Para fazer inscrição ou tirar dúvidas sobre a Catequese:</p>
-      <a href="catequese.html" class="button">Ver Página da Catequese</a>
-    </div>
+          <a href="missa.html" class="button">
+            Ver horários das missas
+          </a>
+        </div>
+      </div>
+    </section>
 
-    <div class="card-vertical">
-  <h2>⛪ Coroinhas</h2>
-  <p>Quer ser coroinha ou inscrever seu filho para servir no altar?</p>
-  <a href="coroinhas.html" class="button">Ver Página dos Coroinhas</a>
-  </div>
+     
+  <!-- Horários das missas -->
+<section class="horarios-destaque">
+  <h2>📅 Horários das Missas</h2>
+  <p><strong>Confira os horários de missa em cada comunidade da paróquia:</strong></p>
 
+  <div class="horarios-comunidades">
 
-    <div class="card-vertical">
-      <h2>🙏 Primeira Eucaristia</h2>
-      <p>Saiba como participar da preparação para a Eucaristia:</p>
-      <a href="eucaristia.html" class="button">Ver Página da Eucaristia</a>
-    </div>
+    <!-- MATRIZ -->
+    <div class="horario-item">
+      <h3>Matriz - Santo Oscar Romero</h3>
+      <ul>
+        <li>Quarta-feira: 15h00 e 20h00</li>
+        <li>Domingo: 08h00 e 19h00</li>
+        <li>1ª Sexta-feira do mês: 20h00</li>
+      </ul>
 
-    <div class="card-vertical">
-      <h2>🕊️ Crisma</h2>
-      <p>Preparação para o sacramento da Crisma:</p>
-      <a href="crisma.html" class="button">Ver Página da Crisma</a>
-    </div>
-
-    <div class="card-vertical">
-      <h2>🙇‍♂️ Confissão</h2>
-      <p>Confira os horários de confissões ou fale conosco:</p>
-      <a href="confissoes.html" class="button">Ver Página de Confissão</a>
-    </div>
-
-    <div class="card-vertical">
-      <h2>✝️ Missa</h2>
-      <p>Veja os horários das missas celebradas na paróquia:</p>
-      <a href="missa.html" class="button">Ver Página da Missa</a>
-    </div>
-
-    <div class="card-vertical">
-      <h2>💍 Casamento</h2>
-      <p>Agende e conheça os documentos necessários:</p>
-      <a href="casamentos.html" class="button">Ver Página de Casamentos</a>
-    </div>
-
-
-    <div class="card-vertical">
-      <h2>🕯️ Pastorais</h2>
-      <p>Informações sobre as Pastorais:</p>
-      <a href="festa.html" class="button">Ver Página das Pastorais</a>
-    </div>
-
-  </nav>
-
-<footer class="footer">
-  <div class="col">
-    <div class="info-item">
-      <img src="imagens/icone_maps.svg" alt="Endereço" />
-      <a href="https://www.google.com/maps?q=Rua+Saulo+Gomes,+115,+Jd.+Florence+I,+Campinas/SP" target="_blank">
-        Rua Saulo Gomes, 115, Jd. Florence I, Campinas/SP
+      <a 
+        href="https://maps.google.com/?q=Rua+Saulo+Gomes,+115,+Campinas"
+        target="_blank"
+        class="button botao-pequeno"
+      >
+        📍 Como chegar
       </a>
     </div>
-    <div class="info-item">
-      <img src="imagens/icone_atendimentoo.svg" alt="Atendimento" />
-      Atendimento: Terça-feira a Sexta-feira das 12h as 18h Sábado, 9h–12h 
+
+    <!-- SÃO LUCAS -->
+    <div class="horario-item">
+      <h3>Comunidade São Lucas</h3>
+      <ul>
+        <li>Domingo: 09h30</li>
+      </ul>
+
+      <a 
+        href="https://maps.google.com/?q=Rua+Saulo+Gomes,+115,+Campinas"
+        target="_blank"
+        class="button botao-pequeno"
+      >
+        📍 Como chegar
+      </a>
     </div>
-    <div class="info-item">
-      <img src="imagens/icone_telefonee.svg" alt="Telefone" />
-      <a href="tel:+5519989822853">(19) 98982‑2853</a>
+
+    <!-- SANTA PAULINA -->
+    <div class="horario-item">
+      <h3>Comunidade Santa Paulina</h3>
+      <ul>
+        <li>Sábado: 18h00</li>
+      </ul>
+
+      <a 
+        href="https://maps.google.com/?q=Rua+Saulo+Gomes,+115,+Campinas"
+        target="_blank"
+        class="button botao-pequeno"
+      >
+        📍 Como chegar
+      </a>
     </div>
-    <div class="info-item">
-      <img src="imagens/icone_gmail.svg" alt="Email" />
-      <a href="mailto:paroquiaoscarromero@gmail.com">Email</a>
+
+    <!-- SENHOR DO BONFIM -->
+    <div class="horario-item">
+      <h3>Comunidade Senhor do Bonfim</h3>
+      <ul>
+        <li>Sábado: 19h30</li>
+      </ul>
+
+      <a 
+        href="https://maps.google.com/?q=Rua+Saulo+Gomes,+115,+Campinas"
+        target="_blank"
+        class="button botao-pequeno"
+      >
+        📍 Como chegar
+      </a>
     </div>
-    <div class="info-item">
-      <img src="imagens/icone_whats.svg" alt="WhatsApp" />
-      <a href="https://wa.me/5519989822853" target="_blank">WhatsApp </a>
-    </div>
+
   </div>
-
-<div class="imagens-footer">
-  <!-- BLOCO DO PADRE JOÃO -->
-  <div class="perfil">
-     <h3> Saiba mais sobre o Pe Joao Batista </h3>
-     <h4>clique na Imagem</h4>
-    <a href="https://arquidiocesecampinas.com/clero/padre-joao-batista-cesario/" target="_blank" class="link-biografia">
-
-      <img src="imagens/padre.png" alt="Padre João da Silva" />
-    </a>
-        <h4>Instagram do Pe Joao Batista</h4>
-    <a href="https://www.instagram.com/padrejoaosilva" target="_blank">
-      <img src="imagens/icone-instagram.svg" alt="Instagram Padre" class="icon-insta" />
-    </a>
-    
-    </a>
-  </div>
-
-  <!-- BLOCO DA PARÓQUIA -->
-  <div class="perfil">
-   <h3> Saiba mais sobre a Paroquia Jesus Cristo libertador </h3>
-     <h4>clique na Imagem</h4>
-
-    <a href="https://arquidiocesecampinas.com/location/paroquia-jesus-cristo-libertador/" target="_blank" class="link-biografia">
-  <img src="imagens/escudo_paroquia.jpg" alt="Paróquia Jesus Cristo Libertador" />
-
-    </a>
-    <h4>Instagram da Paróquia</h4>
-    <a href="https://www.instagram.com/santooscarromero" target="_blank">
-      <img src="imagens/icone-instagram.svg" alt="Instagram Paróquia" class="icon-insta" />
-    </a>
-        
-    </a>
-  </div>
-</div>
+</section>
 
 
 
-</footer>
+    <!-- Sacramentos e serviços -->
+    <section class="sacramentos">
+      <h2>Sacramentos e Serviços</h2>
+
+      <!-- Atalhos principais -->
+      <div class="atalhos">
+        <div class="atalho-card">
+          <h3>✝️ Missa</h3>
+          <p>Veja os horários das missas celebradas na paróquia.</p>
+          <a href="missa.html" class="button">Acessar</a>
+        </div>
+
+        <div class="atalho-card">
+          <h3>💧 Batismo</h3>
+          <p>Saiba como agendar e quais documentos são necessários.</p>
+          <a href="batismo.html" class="button">Acessar</a>
+        </div>
+
+        <div class="atalho-card">
+          <h3>📚 Catequese</h3>
+          <p>Inscrições, orientações e informações da catequese.</p>
+          <a href="catequese.html" class="button">Acessar</a>
+        </div>
+
+        <div class="atalho-card">
+          <h3>💍 Casamento</h3>
+          <p>Informações para preparação e documentação do matrimônio.</p>
+          <a href="casamentos.html" class="button">Acessar</a>
+        </div>
+      </div>
+
+      <!-- Outros serviços -->
+      <div class="grid-cards">
+        <div class="card-vertical">
+          <h3>🙏 Primeira Eucaristia</h3>
+          <p>Saiba como participar da preparação para a Eucaristia.</p>
+          <a href="eucaristia.html" class="button">Ver página</a>
+        </div>
+
+        <div class="card-vertical">
+          <h3>🕊️ Crisma</h3>
+          <p>Preparação para o sacramento da Crisma.</p>
+          <a href="crisma.html" class="button">Ver página</a>
+        </div>
+
+        <div class="card-vertical">
+          <h3>🙇‍♂️ Confissão</h3>
+          <p>Confira horários de confissões e orientações.</p>
+          <a href="confissoes.html" class="button">Ver página</a>
+        </div>
+
+        <div class="card-vertical">
+          <h3>⛪ Coroinhas</h3>
+          <p>Quer servir no altar? Veja como participar.</p>
+          <a href="coroinhas.html" class="button">Ver página</a>
+        </div>
+
+        <div class="card-vertical">
+          <h3>🙏 Dízimo</h3>
+          <p>Contribua com o dízimo e participe da missão de evangelização da nossa paróquia.</p>
+          <a href="dizimo.html" class="button">Saiba mais</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Vida paroquial -->
+    <section class="vida-paroquial">
+      <h2>Vida Paroquial</h2>
+
+      <div class="grid-cards">
+        <div class="card-vertical">
+          <h3>🎉 Festa Junina</h3>
+          <p>Informações sobre nosso tradicional Arraiá.</p>
+          <a href="festa.html" class="button">Ver página</a>
+        </div>
+
+        <div class="card-vertical">
+          <h3>🕯️ Pastorais</h3>
+          <p>Conheça os grupos e pastorais da paróquia.</p>
+          <a href="pastorais.html" class="button">Ver página</a>
+        </div>
+
+        <div class="card-vertical">
+          <h3>🎟️ Rifas</h3>
+          <p>Confira as rifas em andamento, prêmios e como participar.</p>
+          <a href="rifas.html" class="button">Participar</a>
+        </div>
+      </div>
+    </section>
 
 
-  
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="footer">
+    <div class="col">
+      <h2>Contato com a secretaria</h2>
+
+      <div class="info-item">
+        <img
+          src="imagens/icone_atendimentoo.svg"
+          alt="Atendimento"
+          loading="lazy"
+        />
+        <span>Atendimento: terça a sexta, das 12h às 18h | sábado, das 9h às 12h</span>
+      </div>
+
+      <div class="info-item">
+        <img
+          src="imagens/icone_telefonee.svg"
+          alt="Telefone"
+          loading="lazy"
+        />
+        <a href="tel:+5519989822853">(19) 3267-6215</a>
+      </div>
+
+      <div class="info-item">
+        <img
+          src="imagens/icone_gmail.svg"
+          alt="Email"
+          loading="lazy"
+        />
+        <a href="mailto:paroquiaoscarromero@gmail.com">paroquiaoscarromero@gmail.com</a>
+      </div>
+
+      <div class="info-item">
+        <img
+          src="imagens/icone_whats.svg"
+          alt="WhatsApp"
+          loading="lazy"
+        />
+        <a
+          href="https://wa.me/5519989822853"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          WhatsApp
+        </a>
+      </div>
+
+      <div class="info-item">
+        <img
+          src="imagens/icone_maps.svg"
+          alt="Endereço"
+          loading="lazy"
+        />
+        <a
+          href="https://www.google.com/maps/dir//Jesus+Cristo+Libertador+%2B+Arquidiocese+de+Campinas,+R.+Lasar+Segal,+236+-+Jardim+Florence,+Campinas+-+SP,+13059-016/@-22.9541982,-47.1654605,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x94c8b7953c6b0ab9:0x6c441848ad78fff!2m2!1d-47.1550926!2d-22.9407589?entry=ttu&g_ep=EgoyMDI2MDMxNS4wIKXMDSoASAFQAw%3D%3D"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Rua Lasar Segal 236, Campinas, SP, 13059-016
+        </a>
+      </div>
+    </div>
+
+    <div class="imagens-footer">
+      <div class="perfil">
+        <h3>Saiba mais sobre o Pe. João Batista</h3>
+        <h4>Clique na imagem</h4>
+        <a
+          href="https://arquidiocesecampinas.com/clero/padre-joao-batista-cesario/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="link-biografia"
+        >
+          <img
+            src="imagens/padre.png"
+            alt="Pe. João Batista"
+            loading="lazy"
+          />
+        </a>
+
+        <h4>Instagram do Pe. João Batista</h4>
+        <a
+          href="https://www.instagram.com/pejotabe.pastoral/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="imagens/icone-instagram.svg"
+            alt="Instagram do Padre"
+            class="icon-insta"
+            loading="lazy"
+          />
+        </a>
+      </div>
+
+      <div class="perfil">
+        <h3>Saiba mais sobre a Paróquia Jesus Cristo Libertador</h3>
+        <h4>Clique na imagem</h4>
+        <a
+          href="https://arquidiocesecampinas.com/location/paroquia-jesus-cristo-libertador/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="link-biografia"
+        >
+          <img
+            src="imagens/escudo_paroquia.jpg"
+            alt="Paróquia Jesus Cristo Libertador"
+            loading="lazy"
+          />
+        </a>
+
+        <h4>Instagram da Paróquia</h4>
+        <a
+          href="https://www.instagram.com/pjesuscristolibertador/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="imagens/icone-instagram.svg"
+            alt="Instagram da Paróquia"
+            class="icon-insta"
+            loading="lazy"
+          />
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/noticias.js"></script>
 </body>
 </html>
