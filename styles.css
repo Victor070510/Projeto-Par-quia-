@@ -30,18 +30,6 @@ ol {
   padding-left: 0;
 }
 
-.container-home {
-  width: 95%;
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-.container-interno {
-  width: 95%;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
 .card-box, .horarios-destaque, .section-home, .noticias,
 .sacramentos,
 .vida-paroquial {
@@ -190,7 +178,7 @@ ol {
   max-width: 1100px;
   margin: 2rem auto;
   padding: 2rem;
-  text-align: left;
+  text-align: center;
 }
 .horarios-destaque h2 {
   color: #0d47a1;
@@ -218,29 +206,41 @@ ol {
   border: 1px solid #d9e3f0;
   border-radius: 14px;
   padding: 1.2rem 1.4rem;
-  transition: background-color 0.25s ease;
+  text-align: center;
+  transition: background-color 0.25s ease, transform 0.2s ease;
 }
 .horario-item:hover {
   background-color: #f7fbff;
+  transform: translateY(-2px);
 }
 .horario-item h3 {
   color: #0d47a1;
-  margin-bottom: 0.7rem;
-  font-size: 1.1rem;
-  text-align: left;
+  margin-bottom: 0.8rem;
+  font-size: 1.15rem;
+  text-align: center;
 }
 .horario-item ul {
-  list-style: disc;
-  padding-left: 1.2rem;
-  margin: 0;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  display: block;
+  text-align: center;
 }
-.horario-item ul li {
+.horario-item li {
   margin-bottom: 0.45rem;
   color: #2b2b2b;
 }
-.horario-item .button,
-.horario-item .button-whatsapp {
+
+.botoes-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
   margin-top: 1rem;
+  flex-wrap: wrap;
+}
+.botoes-card a {
+  text-align: center;
 }
 
 .atalhos,
@@ -425,17 +425,6 @@ ol {
   flex-wrap: wrap;
 }
 
-.botoes-card {
-  display: flex;
-  gap: 0.8rem;
-  margin-top: 1rem;
-  flex-wrap: wrap;
-}
-.botoes-card a {
-  flex: 0 0 auto;
-  text-align: center;
-}
-
 .area-arrecadacao {
   background: #ffffff;
   border: 2px dashed #1565c0;
@@ -608,10 +597,19 @@ ol {
     flex-direction: column;
     align-items: center;
   }
+  .botoes-card {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
   .button,
   .button-whatsapp {
     width: 100%;
     max-width: 320px;
+  }
+  .botao-pequeno {
+    width: auto;
+    max-width: none;
   }
   .atalhos,
   .grid-cards {

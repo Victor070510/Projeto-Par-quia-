@@ -64,18 +64,6 @@ ol {
 // ======================================
 // BASE
 // ======================================
-.container-home {
-  width: 95%;
-  max-width: $largura-home;
-  margin: 0 auto;
-}
-
-.container-interno {
-  width: 95%;
-  max-width: $largura-interna;
-  margin: 0 auto;
-}
-
 .card-box {
   background: $cor-branca;
   border: 1px solid $cor-borda;
@@ -225,7 +213,7 @@ ol {
 }
 
 // ======================================
-// TÍTULOS DE SEÇÃO DA HOME
+// SEÇÕES DA HOME
 // ======================================
 .noticias,
 .sacramentos,
@@ -250,7 +238,7 @@ ol {
   max-width: $largura-home;
   margin: 2rem auto;
   padding: 2rem;
-  text-align: left;
+  text-align: center;
   @extend .card-box;
 
   h2 {
@@ -282,33 +270,46 @@ ol {
   border: 1px solid $cor-borda;
   border-radius: 14px;
   padding: 1.2rem 1.4rem;
-  transition: background-color 0.25s ease;
+  text-align: center;
+  transition: background-color 0.25s ease, transform 0.2s ease;
 
   &:hover {
     background-color: $cor-card-hover;
+    transform: translateY(-2px);
   }
 
   h3 {
     color: $cor-primaria;
-    margin-bottom: 0.7rem;
-    font-size: 1.1rem;
-    text-align: left;
+    margin-bottom: 0.8rem;
+    font-size: 1.15rem;
+    text-align: center;
   }
 
   ul {
-    list-style: disc;
-    padding-left: 1.2rem;
-    margin: 0;
-
-    li {
-      margin-bottom: 0.45rem;
-      color: $cor-texto;
-    }
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    display: block;
+    text-align: center;
   }
 
-  .button,
-  .button-whatsapp {
-    margin-top: 1rem;
+  li {
+    margin-bottom: 0.45rem;
+    color: $cor-texto;
+  }
+}
+
+// botão das comunidades sempre embaixo
+.botoes-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+
+  a {
+    text-align: center;
   }
 }
 
@@ -503,18 +504,6 @@ ol {
   gap: 1rem;
   margin-top: 1.2rem;
   flex-wrap: wrap;
-}
-
-.botoes-card {
-  display: flex;
-  gap: 0.8rem;
-  margin-top: 1rem;
-  flex-wrap: wrap;
-
-  a {
-    flex: 0 0 auto;
-    text-align: center;
-  }
 }
 
 // ======================================
@@ -718,10 +707,21 @@ ol {
     align-items: center;
   }
 
+  .botoes-card {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
   .button,
   .button-whatsapp {
     width: 100%;
     max-width: 320px;
+  }
+
+  .botao-pequeno {
+    width: auto;
+    max-width: none;
   }
 
   .atalhos,
